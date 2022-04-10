@@ -32,7 +32,7 @@ fmt.Fprintf(w, "hello!")
 }
 
 func main(){
-	// run from cl w/ go build
+	// run from cl w/ go build + go run main.go
 	fileServer := http.FileServer(http.Dir("./static"))
 	// "route", funcToHandleRoute
 	http.Handle("/", fileServer)
